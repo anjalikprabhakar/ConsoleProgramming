@@ -3,17 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleProgramming", "ConsoleProgramming\ConsoleProgramming.csproj", "{29E17437-CAFE-434C-823C-3DCAB982F240}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleProgramming", "ConsoleProgramming\ConsoleProgramming.csproj", "{29E17437-CAFE-434C-823C-3DCAB982F240}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasicSyntax", "BasicSyntax\BasicSyntax.csproj", "{54D617B6-DC85-433A-B237-54F54E560C37}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BasicSyntax", "BasicSyntax\BasicSyntax.csproj", "{54D617B6-DC85-433A-B237-54F54E560C37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repetition", "Repetition\Repetition.csproj", "{0B594EC6-B0FF-4658-85F6-8F47C392A872}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Repetition", "Repetition\Repetition.csproj", "{0B594EC6-B0FF-4658-85F6-8F47C392A872}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MathematicalOperations", "MathematicalOperations\MathematicalOperations.csproj", "{1CBD00B9-789B-4F89-B09A-618403A47342}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MathematicalOperations", "MathematicalOperations\MathematicalOperations.csproj", "{1CBD00B9-789B-4F89-B09A-618403A47342}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conditional", "Conditional\Conditional.csproj", "{689C1C82-253B-4094-9D1A-FAEF396D3C11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Conditional", "Conditional\Conditional.csproj", "{689C1C82-253B-4094-9D1A-FAEF396D3C11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1Assignment1", "Day1Assignment1\Day1Assignment1.csproj", "{22400A69-A688-421B-A06B-83B566F89737}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1Assignment1", "Day1Assignment1\Day1Assignment1.csproj", "{22400A69-A688-421B-A06B-83B566F89737}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdvancedConcepts", "AdvancedConcepts\AdvancedConcepts.csproj", "{1DB22512-FBEA-406F-8F2C-669638F293A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment2", "Assignment2Day2\Assignment2.csproj", "{5DE54678-5481-4DC2-AE11-8FAD08AA91B3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{22400A69-A688-421B-A06B-83B566F89737}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{22400A69-A688-421B-A06B-83B566F89737}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{22400A69-A688-421B-A06B-83B566F89737}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DB22512-FBEA-406F-8F2C-669638F293A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DB22512-FBEA-406F-8F2C-669638F293A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DB22512-FBEA-406F-8F2C-669638F293A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DB22512-FBEA-406F-8F2C-669638F293A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE54678-5481-4DC2-AE11-8FAD08AA91B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE54678-5481-4DC2-AE11-8FAD08AA91B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE54678-5481-4DC2-AE11-8FAD08AA91B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE54678-5481-4DC2-AE11-8FAD08AA91B3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
