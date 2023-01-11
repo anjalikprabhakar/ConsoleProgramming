@@ -1,4 +1,5 @@
-﻿Console.WriteLine("Welcome");
+﻿
+Console.WriteLine("Welcome");
 
 int cardNumber = 12345;
 int pinNumber = 1234;
@@ -8,11 +9,10 @@ int balance = 10000;
 Console.WriteLine("Enter Your 5 Digit ATM CARD Number");
 int inputCardNumber = Convert.ToInt32(Console.ReadLine());
 
-
 Console.WriteLine("Enter Your 4 Digit PIN Number");
 int inputPinNumber = Convert.ToInt32(Console.ReadLine());
-
 bool InputValidation(int inputCardNumber, int inputPinNumber)
+
 {
     if (inputPinNumber.ToString().Length != 4)
     {
@@ -27,6 +27,7 @@ bool InputValidation(int inputCardNumber, int inputPinNumber)
     else if (inputCardNumber != cardNumber && pinNumber != inputPinNumber)
     {
         Console.WriteLine("Invalid credentials");
+        Console.WriteLine("Thank you! your Transaction is Cancelled");
         return false;
     }
     else
@@ -36,69 +37,91 @@ bool InputValidation(int inputCardNumber, int inputPinNumber)
 }
 
 bool validation = InputValidation(inputCardNumber, inputPinNumber);
-Console.WriteLine(validation);
 
-int AtmFunction(bool valid)
+int AtmFunctionMenu(bool valid)
 {
     int choice = 0;
     if (valid is true)
     {
-        Console.WriteLine($"Helllo {name} !");
-        Console.WriteLine("To check balance Press 1");
-        Console.WriteLine("To withdraw money Press 2");
-        Console.WriteLine("To deposite Money  Press 3");
-        Console.WriteLine("To Cancel Press 4");
+        while (choice != 4)
+        {
+            Console.WriteLine($"Helllo {name} !");
+            Console.WriteLine("To check balance Press 1");
+            Console.WriteLine("To withdraw money Press 2");
+            Console.WriteLine("To deposite Money  Press 3");
+            Console.WriteLine("To Cancel Press 4");
+            choice = Convert.ToInt32(Console.ReadLine());
+            if (choice == 1 || choice == 2 || choice == 3)
+            {
+                return choice;
+            }
 
-        choice = Convert.ToInt32(Console.ReadLine());
+        }
+        Console.WriteLine("Thank you! your Transaction is Cancelled");
     }
     return choice;
 }
-int choice = AtmFunction(validation);
-void CheckBalaance(int choice)
+
+int choice = AtmFunctionMenu(validation);
+void Withdraw()
 {
-    if (choice == 1)
-    {
 
-        Console.WriteLine($"Your Balance is{balance}");
-    }
-}
-CheckBalaance(choice);
-void Withdraw(int choice)
-{ if (choice == 2)
     {
-        Console.WriteLine("Enter the Amount To withdraw");
-        int amount = Convert.ToInt32(Console.ReadLine());
-        if (amount > balance)
+        try
         {
-            Console.WriteLine("Insufficient Balance ");
+            Console.WriteLine("Enter the Amount To withdraw");
+            int amount = Convert.ToInt32(Console.ReadLine());
+            if (amount > balance)
+            {
+                Console.WriteLine("Insufficient Balance ");
+            }
+            else
+            {
+                Console.WriteLine("Please Collect the cash");
+                Console.WriteLine($"Your Available Balance is {balance - amount}");
+            }
         }
-        else
+        catch (Exception e)
         {
-            Console.WriteLine("Please Collect the cash");
-            Console.WriteLine($"Your Available Balance is {balance - amount}");
+
+            Console.WriteLine($"Illegal operation");
+            Console.WriteLine("Thank you! your Transaction is Cancelled");
         }
     }
 }
-Withdraw(choice);
 
-void Deposit(int choice){
-    if (choice == 3)
-    {
-        Console.WriteLine("Enter the Amount To deposit");
-        int amount = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine($"Your Available Balance is {balance + amount}");
-
-    }
-}
-
-Deposit(choice);    
-
-void CancelTransaction(int choice, bool validation)
+void Deposit()
 {
-    if ((choice==4) ||(validation==false))
     {
-        Console.WriteLine("Thank you! your Transaction is Cancelled");
+        try
+        {
+            Console.WriteLine("Enter the Amount To deposit");
+            int amount = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine($"Your Available Balance is {balance + amount}");
+
+        }
+        catch (Exception ex)
+        {
+
+            Console.WriteLine("Invalid Input");
+            Console.WriteLine("Thank you! your Transaction is Cancelled");
+        }
+    }
+}
+void AtmOperations(int choice)
+{
+    switch (choice)
+    {
+        case 1:
+            Console.WriteLine($"Your Balance is  {balance}");
+            break;
+        case 2:
+            Withdraw();
+            break;
+        case 3:
+            Deposit();
+            break;
     }
 }
 
-CancelTransaction(choice,validation);  
+AtmOperations(choice);
