@@ -3,7 +3,6 @@ Console.WriteLine("Welcome");
 
 int cardNumber = 12345;
 int pinNumber = 1234;
-string name = "name";
 int balance = 10000;
 
 Console.WriteLine("Enter Your 5 Digit ATM CARD Number");
@@ -45,7 +44,7 @@ int AtmFunctionMenu(bool valid)
     {
         while (choice != 4)
         {
-            Console.WriteLine($"Helllo {name} !");
+            Console.WriteLine("Helllo!");
             Console.WriteLine("To check balance Press 1");
             Console.WriteLine("To withdraw money Press 2");
             Console.WriteLine("To deposite Money  Press 3");
