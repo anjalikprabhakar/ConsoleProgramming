@@ -1,6 +1,15 @@
 ﻿
-class ShoppingCart
+public class ShoppingCart
 {
+
+
+    public static void Detais(string name, int price)
+    {
+        name = name;
+        price = price;
+    }
+
+
 
     public string item1 = "ITEM 1";
     public string item2 = "ITEM 2";

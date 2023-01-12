@@ -1,5 +1,6 @@
 ﻿
-
+CartEntries cartEntries = new CartEntries();
+ShoppingCart shoppingCart = new ShoppingCart();
 class Order
 
 {
@@ -10,7 +11,6 @@ class Order
         cartEntries.Entries();
         double tax = 0.1;
         double totalAmount = 0;
-        double totalpayable = 0;
         double totalTaxAmount = 0.0;
         if (cartEntries.item1Qty != 0)
         {

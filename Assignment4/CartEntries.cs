@@ -1,6 +1,6 @@
 ﻿
 
-class CartEntries : ShoppingCart
+public class CartEntries
 {
 
 
