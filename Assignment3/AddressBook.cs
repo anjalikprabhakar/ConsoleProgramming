@@ -1,4 +1,5 @@
-﻿public class AddressBook
+﻿
+public class AddressBook
 {
     public readonly List<Contact> _contact;
     public AddressBook()

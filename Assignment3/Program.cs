@@ -5,13 +5,12 @@
 
 List<Contact> catchedContacts = new List<Contact>();
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 3; i++)
 {
     string firstName = string.Empty;
     string lastName = string.Empty;
     string email = string.Empty;
     string phone = string.Empty;
-    int index = 1;
 
 
 
@@ -45,7 +44,7 @@ addressBook.SortContacts();
 
 
 
-for (int i = 0; i < 5; i++)
+for (int i = 0; i < 3; i++)
 {
     Console.WriteLine("removing contacts" + catchedContacts[i]);
     addressBook.RemoveContact(catchedContacts[i]);
