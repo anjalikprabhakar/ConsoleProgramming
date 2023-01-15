@@ -23,12 +23,12 @@ double balance = 0.0;
 double monthlybalance = 0.0;
 
 var result =
-from data in statement.Take(12)
-group data by new { date = data.Date.ToString("MMM") } into g
+from data in statement.Take(int.MaxValue)
+group data by new { date = data.Date.ToString("MMM") } into newData
 select new
 {
-    Month = g.Key.date,
-    Blance = g.Sum(x => x.Amount),
+    Month = newData.Key.date,
+    Blance = newData.Sum(x => x.Amount),
 
 };
 foreach (var item in result)

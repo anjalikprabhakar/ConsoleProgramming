@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment5", "Assignment5\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment6.1", "Assignment6\Assignment6.1.csproj", "{A06E6F6C-FE98-41A7-870F-44F89447DBE6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment6", "Assignment6\Assignment6.csproj", "{6C24B9B8-909C-49BD-B037-6AE9671F99D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment6", "Assignment6\Assignment6.csproj", "{6C24B9B8-909C-49BD-B037-6AE9671F99D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assignment5FrenchDeck", "Assignment6FrenchDeck\Assignment5FrenchDeck.csproj", "{607962F4-B754-4772-ACEF-921A85471F27}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{6C24B9B8-909C-49BD-B037-6AE9671F99D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C24B9B8-909C-49BD-B037-6AE9671F99D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C24B9B8-909C-49BD-B037-6AE9671F99D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{607962F4-B754-4772-ACEF-921A85471F27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{607962F4-B754-4772-ACEF-921A85471F27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{607962F4-B754-4772-ACEF-921A85471F27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{607962F4-B754-4772-ACEF-921A85471F27}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
