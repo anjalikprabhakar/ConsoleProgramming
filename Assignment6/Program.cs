@@ -16,7 +16,7 @@ Console.WriteLine(pathString);
 using var streamReader = File.OpenText(pathString);
 using var csvReader = new CsvReader(streamReader, CultureInfo.CurrentCulture);
 
-var statement = csvReader.GetRecords<Statement>();
+var statement = new Statement(date,amount);
 
 
 double balance = 0.0;
